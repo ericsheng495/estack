@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Eric help
 
+For remembering implemented features or loading durable project context, route to **project-knowledge** and [its guide](../../docs/project-knowledge.md). For delegation or token cost, route to **delegate-work** and [its research](../../docs/delegation.md). Explain that initialization is project-specific and that cost savings are unmeasured. When the message asks to implement either capability, do the requested work rather than only explaining it.
+
 Answer the user's question about estack, hand them a prompt they can send, and link the file the answer came from. For a help question, don't start the work. The user asked how, and a estack run spends real tokens, so let them send the prompt.
 
 A message that asks for work, such as "use estack to fix this bug", is not a help question. Read [`eric-mode`](../eric-mode/SKILL.md), do the work under it, and mention once that a Custom Mode keeps it on.

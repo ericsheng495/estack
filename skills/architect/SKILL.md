@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Architect
 
+Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts, fixed model defaults, and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
+
 Sketch types, function signatures, class shapes, and module boundaries with `not implemented` bodies and pseudocode. Synthesize across multiple model perspectives, then fill in code against the chosen sketch.
 
 ## Start

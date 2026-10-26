@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delegate Work"
+  short_description: "Use focused subagents with bounded context and cost"
+  default_prompt: "Use $delegate-work to split this task into focused work with concise handoffs."

@@ -1,7 +1,7 @@
 {
   "name": "estack",
   "displayName": "estack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Eric Sheng's personal variation of poteto's pstack: agent skills, engineering principles, and verified workflows.",
   "author": {
     "name": "Eric Sheng"

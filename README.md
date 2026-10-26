@@ -18,10 +18,18 @@ Install the whole collection when using `eric-mode`, because it routes to siblin
 - `eric-help`: skill and playbook guidance, renamed from `poteto-help`.
 - `setup-estack`: model configuration, renamed from `setup-pstack`.
 - `eric-agent`: the delegate persona, renamed from `poteto-agent`.
+- `project-knowledge`: persistent, source-linked context about each project's implemented features.
+- `delegate-work`: focused subagents with bounded context, concise handoffs, and cost-aware defaults.
 
 In Codex, invoke `$eric-mode`; in Cursor, use `/eric-mode`. Native plugin agent registration and tool names depend on the host. The upstream workflows are Cursor-first: Cursor automation, Bugbot, external `cursor-team-kit` skills, and model slugs require available equivalents. Do not assume installing plain skills registers a native agent or supplies external plugins.
 
 The Claude Code adapter is in [docs/harness/claude-code.md](docs/harness/claude-code.md). It describes tool translation; this standalone repository is not the Cursor plugin marketplace.
+
+## Feature knowledge and delegation
+
+Ask `project-knowledge` to catalog implemented features in the repository you are working on. It creates a local `.estack/knowledge/` catalog and a short project instruction pointer. `eric-mode` retrieves relevant feature context before work and updates it after behavior changes. Existing projects need this bootstrap once; installation alone does not reconstruct past work. See the [knowledge guide and research](docs/project-knowledge.md).
+
+The [cost-aware delegation policy](skills/delegate-work/SKILL.md) takes precedence over inherited automatic fanout and fixed model defaults. Small tasks stay with the main agent; substantial independent work gets focused workers, selective context, bounded retries, and concise evidence reports. Supported cheaper models can be selected through user or host configuration. Delegation can increase total tokens, so savings are unmeasured. See the [delegation research and tradeoffs](docs/delegation.md).
 
 ## Customize
 

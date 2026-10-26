@@ -5,6 +5,8 @@ description: Configure which models estack uses per role and at what reasoning b
 
 # Setup estack
 
+**Cost-aware setup.** Start unconfigured roles on `inherit-parent` and panels with one `inherit-parent` entry. The concrete model slugs and larger panels below are upstream examples, not the default configuration to write. Offer supported cheaper models for narrow work when the host permits them, and broader panels only when requested or justified. An existing explicit role choice stays in effect unless the user changes it. Follow **delegate-work** for task splitting, retry limits, supported model selection, and selective context. Outside Cursor, use the host's supported project configuration rather than silently writing Cursor rules that the host will never read.
+
 Write `~/.cursor/rules/estack-models.mdc`, an always-applied rule that sets estack's model per role.
 
 ## Steps
