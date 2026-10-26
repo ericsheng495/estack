@@ -1,4 +1,67 @@
 {
   "version": 1,
-  "features": []
+  "features": [
+    {
+      "id": "project-knowledge",
+      "summary": "Persistent implemented-feature context with bounded retrieval and source freshness",
+      "status": "implemented",
+      "document": ".estack/knowledge/features/project-knowledge.md",
+      "source_paths": [
+        "skills/project-knowledge",
+        "skills/eric-mode/SKILL.md",
+        "skills/recall/SKILL.md",
+        "docs/project-knowledge.md",
+        "AGENTS.md"
+      ],
+      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
+      "reviewed_at": "2026-10-26",
+      "verification": "13 isolated helper tests passed; independent temporary-project smoke exercise passed; skill and documentation checks passed. Context consumption by arbitrary hosts is not behaviorally evaluated."
+    },
+    {
+      "id": "cost-aware-delegation",
+      "summary": "Focused subagents with selective context, bounded retries, and supported model routing",
+      "status": "implemented",
+      "document": ".estack/knowledge/features/cost-aware-delegation.md",
+      "source_paths": [
+        "skills/delegate-work",
+        "skills/eric-mode/SKILL.md",
+        "skills/setup-estack/SKILL.md",
+        "docs/delegation.md",
+        "skills/architect/SKILL.md",
+        "skills/arena/SKILL.md",
+        "skills/automate-me/SKILL.md",
+        "skills/figure-it-out/SKILL.md",
+        "skills/ketchup/SKILL.md",
+        "skills/maintain-verification-skill/SKILL.md",
+        "skills/interrogate/SKILL.md",
+        "skills/how/SKILL.md",
+        "skills/no-comments/SKILL.md",
+        "skills/reflect/SKILL.md",
+        "skills/swarm/SKILL.md",
+        "skills/show-me-your-work/SKILL.md",
+        "skills/recall/SKILL.md",
+        "skills/why/SKILL.md"
+      ],
+      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
+      "reviewed_at": "2026-10-26",
+      "verification": "Skill schema validation and manual integration review passed. No controlled model-behavior evaluation or cost benchmark; savings unmeasured."
+    },
+    {
+      "id": "standalone-stack",
+      "summary": "Eric’s renamed standalone pstack variation with 60 top-level skills",
+      "status": "implemented",
+      "document": ".estack/knowledge/features/standalone-stack.md",
+      "source_paths": [
+        "README.md",
+        "UPSTREAM.md",
+        "plugin.json",
+        ".cursor-plugin/plugin.json",
+        "agents/eric-agent.md",
+        ".github/workflows/knowledge.yml"
+      ],
+      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
+      "reviewed_at": "2026-10-26",
+      "verification": "60 common skill schemas, names, plugin metadata, and main/new documentation links validated. Full upstream helper suites and fresh CLI installation not run."
+    }
+  ]
 }
