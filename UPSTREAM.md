@@ -20,7 +20,7 @@ The old independent repository is preserved at https://github.com/ericsheng495/e
 
 Renamed pstack to estack, poteto-mode to eric-mode, poteto-help to eric-help, poteto-agent to eric-agent, and setup-pstack to setup-estack. Updated internal references, public file links, plugin metadata, and installation instructions. Replaced the upstream first-person introduction with attribution to its author.
 
-Estack adds `project-knowledge`, a repository-local feature catalog with bounded retrieval and source freshness checks, and `delegate-work`, a cost-aware policy overriding inherited mandatory fanout and hardcoded model defaults. Routed workflows load the policy before delegating. Recall checks feature knowledge first. These are local additions, documented with research in `docs/project-knowledge.md` and `docs/delegation.md`; the source snapshot above still identifies the upstream baseline.
+Estack adds `project-knowledge`, a repository-local feature catalog with bounded retrieval and source freshness checks, and `delegate-work`, a cost-aware policy limiting inherited mandatory fanout and repeated context. Original pstack models by role, model families, and panel compositions are preserved; parent-model inheritance is opt-in. Routed workflows load the policy before delegating. Recall checks feature knowledge first. These are local additions, documented with research in `docs/project-knowledge.md` and `docs/delegation.md`; the source snapshot above still identifies the upstream baseline.
 
 ## Updating
 

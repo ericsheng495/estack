@@ -25,7 +25,9 @@ These are practical defaults inferred from the research, not benchmarked optimum
 | Routine implementation verification | Implementer checks behavior; coordinator checks integration |
 | Repeated failed delegation | One corrective follow-up, then revise the split or solve directly |
 
-Workers inherit the parent model unless a user configuration or host role authorizes a supported alternative. Estack does not assume that a faster model is cheaper, invent provider slugs, or force maximum reasoning. The policy overrides inherited estack fanout requirements and fixed model defaults. A user's explicit choice of broader review or exploration still applies.
+Workers use the original pstack model for their role unless the user configures an override. Code, exploration, tooling, and verification default to `grok-4.7-xhigh-fast`. Judgment, prose, explanation, synthesis, and the hardest tasks default to `claude-opus-5-5-xhigh`. Arena, architect, and interrogate panels keep their upstream diverse-model composition when used. The complete role mapping remains in [setup-estack](../skills/setup-estack/SKILL.md), and eric-mode retains the upstream effort/speed rules. Parent-model inheritance is an explicit configuration choice, not the default. If a host cannot run a required model, report that limitation and obtain a supported mapping before dispatching the affected delegate.
+
+Cost control applies to worker counts, context size, and retries rather than silently changing role models. Estack does not assume that a faster model is cheaper or invent supported provider slugs. A user's explicit choice of broader review or exploration still applies.
 
 A worker receives a narrow outcome, file pointers, writable ownership, task limits, and a stop condition. It returns a short report with evidence, tests, and unresolved risks. File ownership prevents conflicting concurrent writes. Reuse a relevant worker for a small correction when supported; avoid reloading full history into fresh workers by default.
 

@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Automate me
 
-Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts, fixed model defaults, and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
+Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
 
 A guided flow for turning the user's working conventions into a skill agents will follow. The output is one `-mode` skill tailored to them (e.g. `jay-mode`, `priya-mode`).
 

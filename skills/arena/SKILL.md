@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Arena
 
-Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts, fixed model defaults, and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
+Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
 
 Open a todolist with one entry per phase (Frame, Fan out, Cross-judge, Pick, Graft, Verify) before launching anything.
 

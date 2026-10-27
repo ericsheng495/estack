@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Reflect
 
-Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts, fixed model defaults, and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
+Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
 
 Mine the current conversation for durable learnings, then route them into skill edits.
 

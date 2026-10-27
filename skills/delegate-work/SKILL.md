@@ -14,7 +14,7 @@ Optimize total task cost at the required quality, including coordinator, worker,
 - Start with one worker. Use up to two concurrent workers for independent substantial tasks with separate ownership. These are defaults, not measured optimums. Increase only for an explicit user preference or a concrete coverage need whose extra cost is justified.
 - Keep ordinary verification with the implementer and coordinator. Add an independent review for consequential risks or an explicit review request. Do not trigger routine panels, duplicate implementations, or multiple-model votes solely because a routed skill suggests fanout.
 
-This cost-aware policy is the default for estack. It takes precedence over inherited estack workflow instructions that demand fixed agent counts, fresh agents for every follow-up, hardcoded model defaults, or automatic parallel design and review. Preserve the workflow's actual outcome and required safety gates. Follow an explicit user choice of deeper exploration or broader review.
+This cost-aware policy is the default for estack. It takes precedence over inherited estack workflow instructions that demand fixed agent counts, fresh agents for every follow-up, or automatic parallel design and review. Preserve the workflow's actual outcome and required safety gates. Follow an explicit user choice of deeper exploration or broader review.
 
 ## Give each worker a contract
 
@@ -34,7 +34,9 @@ Budgets are task-specific targets unless enforced by the host. Set a concrete se
 
 ## Route without inventing capabilities
 
-Inherit the parent model by default. Use a cheaper capable model only when an explicit user configuration or host role authorizes it and the available tool accepts it. A narrow lookup or mechanical edit can use a cheaper role; ambiguous architecture or subtle correctness may need the stronger role. Never guess model names, pricing, speed suffixes, or reasoning levels. If a configured model is unavailable, omit the override and report the fallback. Background execution saves waiting time, not inherently tokens; use it when the coordinator has independent work.
+Use the original pstack model for each role, unless the user configured an explicit override. Read the complete mapping in [setup-estack](../setup-estack/SKILL.md), step 5. Code, exploration, tooling, and verification default to `grok-4.7-xhigh-fast`; prose, explanation, synthesis, and the hardest tasks default to `claude-opus-5-5-xhigh`. Arena, architect, and interrogate panels retain their configured diverse-model composition when the task warrants a panel. Follow eric-mode's upstream effort and speed rules while retaining each role's model family.
+
+Cost control comes from selective delegation, small context, and bounded retries. It does not override role models or silently collapse a panel to the parent model. `inherit-parent` and `auto` apply only when explicitly configured. Never guess available slugs or pricing. If the required role model is unavailable, state the role and requested model and obtain a supported mapping before dispatching it; continue independent work. Background execution saves waiting time, not inherently tokens; use it when the coordinator has independent work.
 
 ## Integrate once
 

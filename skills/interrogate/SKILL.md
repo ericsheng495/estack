@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Interrogate
 
-Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts, fixed model defaults, and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
+Before spawning subagents, read [delegate-work](../delegate-work/SKILL.md). Its cost-aware policy takes precedence over the fanout counts and fresh-agent requirements below, while preserving the requested outcome and verification goals. An explicit user request for broader exploration or review can expand the scope.
 
 Spawn one reviewer per configured model to adversarially review code changes. The adversarial signal comes from model diversity, not assigned personas. The deliverable is a synthesized verdict. Do NOT auto-apply changes.
 
