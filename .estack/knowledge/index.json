@@ -13,13 +13,13 @@
         "docs/project-knowledge.md",
         "AGENTS.md"
       ],
-      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
-      "reviewed_at": "2026-10-26",
-      "verification": "13 isolated helper tests passed; independent temporary-project smoke exercise passed; skill and documentation checks passed. Context consumption by arbitrary hosts is not behaviorally evaluated."
+      "reviewed_commit": "52016bbdad21b347c7d5136a72ab8f535309ec5e",
+      "reviewed_at": "2026-10-27",
+      "verification": "Source review confirmed the role-routing update preserves knowledge loading and maintenance; helper code unchanged. Earlier 13 helper tests and independent bootstrap/retrieval smoke check passed; no new runtime helper test needed for this instruction-only update."
     },
     {
       "id": "cost-aware-delegation",
-      "summary": "Focused subagents with selective context, bounded retries, and supported model routing",
+      "summary": "Focused subagents with original pstack models by role, bounded context, and retries",
       "status": "implemented",
       "document": ".estack/knowledge/features/cost-aware-delegation.md",
       "source_paths": [
@@ -42,9 +42,9 @@
         "skills/recall/SKILL.md",
         "skills/why/SKILL.md"
       ],
-      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
-      "reviewed_at": "2026-10-26",
-      "verification": "Skill schema validation and manual integration review passed. No controlled model-behavior evaluation or cost benchmark; savings unmeasured."
+      "reviewed_commit": "52016bbdad21b347c7d5136a72ab8f535309ec5e",
+      "reviewed_at": "2026-10-27",
+      "verification": "All 17 role mappings exactly match the imported pstack snapshot; original model/effort paragraphs restored; routing schemas and precedence checked. Provider models were not invoked; usage savings unmeasured."
     },
     {
       "id": "standalone-stack",
@@ -59,9 +59,9 @@
         "agents/eric-agent.md",
         ".github/workflows/knowledge.yml"
       ],
-      "reviewed_commit": "7f71bffe4d9c6fe6a664538899d8cf8e067b1313",
+      "reviewed_commit": "52016bbdad21b347c7d5136a72ab8f535309ec5e",
       "reviewed_at": "2026-10-27",
-      "verification": "GitHub fork metadata identifies cursor/plugins as parent; upstream and existing estack history are ancestors of the migrated head. Only migration documentation changed in the working tree. All 13 knowledge tests and manifest validation passed. Full upstream suites and fresh CLI installation not run."
+      "verification": "Reviewed updated documentation and original role-model restoration; fork lineage and standalone layout preserved. Prior fork-migration checks and 13 helper tests passed. Provider model availability and fresh CLI installation not tested."
     }
   ]
 }
