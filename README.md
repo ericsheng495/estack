@@ -1,6 +1,8 @@
 # estack
 
-Eric Sheng's personal variation of [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack), by Lauren Tan. This repository preserves the upstream skills, engineering principles, playbooks, and supporting tools under a separate name so they can evolve independently.
+Eric Sheng's personal fork of [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack), by Lauren Tan. GitHub links this repository to [`cursor/plugins`](https://github.com/cursor/plugins), which contains the original pstack. The working tree keeps pstack's skills at the repository root for standalone installation, with project knowledge and cost-aware delegation added.
+
+Upstream Git history and the earlier estack commits are preserved. The previous standalone repository is retained at [estack-standalone-backup](https://github.com/ericsheng495/estack-standalone-backup). See [UPSTREAM.md](UPSTREAM.md) for the source snapshot, history connection, and update procedure.
 
 ## Install
 
