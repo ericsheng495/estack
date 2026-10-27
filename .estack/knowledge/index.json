@@ -48,7 +48,7 @@
     },
     {
       "id": "standalone-stack",
-      "summary": "Eric’s renamed standalone pstack variation with 60 top-level skills",
+      "summary": "GitHub fork of original pstack with preserved history and 60 standalone skills",
       "status": "implemented",
       "document": ".estack/knowledge/features/standalone-stack.md",
       "source_paths": [
@@ -59,9 +59,9 @@
         "agents/eric-agent.md",
         ".github/workflows/knowledge.yml"
       ],
-      "reviewed_commit": "ab68e54c678a13101665a2e026e6de13e1095208",
-      "reviewed_at": "2026-10-26",
-      "verification": "60 common skill schemas, names, plugin metadata, and main/new documentation links validated. Full upstream helper suites and fresh CLI installation not run."
+      "reviewed_commit": "7f71bffe4d9c6fe6a664538899d8cf8e067b1313",
+      "reviewed_at": "2026-10-27",
+      "verification": "GitHub fork metadata identifies cursor/plugins as parent; upstream and existing estack history are ancestors of the migrated head. Only migration documentation changed in the working tree. All 13 knowledge tests and manifest validation passed. Full upstream suites and fresh CLI installation not run."
     }
   ]
 }
